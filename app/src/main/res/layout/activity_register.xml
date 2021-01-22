@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.auth.RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="70dp"
+        android:text="Регистрация"/>
+
+    <LinearLayout
+        android:id="@+id/auth_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/register_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp">
+
+        <EditText
+            android:id="@+id/field_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Ваше имя"
+            android:textColorHint="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/field_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Ваша почта"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="Пароль не менее 6 символов"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Регистрация"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/login_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Войти в аккаунт!"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

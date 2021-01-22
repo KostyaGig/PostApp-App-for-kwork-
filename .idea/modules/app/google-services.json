@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "69051679849",
+    "project_id": "postforkowrk",
+    "storage_bucket": "postforkowrk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69051679849:android:e288bd8b040d73e35f4ef8",
+        "android_client_info": {
+          "package_name": "ru.kostya.postforkowrk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69051679849-rtgepiu8m22g91hpn359fg0faaejsphs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.kostya.postforkowrk",
+            "certificate_hash": "601016afbf9bed36c70cd119c019aea64a08814d"
+          }
+        },
+        {
+          "client_id": "69051679849-a2e6jtrpaidg3tbmhq3a6p7ah5kaq3mj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQDjclJqNjK835YH7z_4iE8Az0nGNg3ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69051679849-a2e6jtrpaidg3tbmhq3a6p7ah5kaq3mj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

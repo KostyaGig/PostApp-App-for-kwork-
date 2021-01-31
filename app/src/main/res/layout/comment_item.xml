@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="100dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:src="@mipmap/ic_launcher"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/defaultLineEditText"
+                android:textStyle="bold"
+                tools:text="Костя"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="8dp"
+                android:textSize="19sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="ЛПШУГРУПРГШРПГШУРПГШ"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/likeImage"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@drawable/ic_plus_grey"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/countLikeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/defaultLineEditText"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"/>
+
+            <ImageView
+                android:id="@+id/disLikeImage"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:tint="@color/defaultLineEditText"
+                android:src="@drawable/ic_minus_grey"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/countDisLikeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="@color/defaultLineEditText"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

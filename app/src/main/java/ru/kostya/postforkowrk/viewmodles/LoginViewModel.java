@@ -48,9 +48,15 @@ public class LoginViewModel extends ViewModel {
 
     public void sendUserToDatabase(User user){
         final DatabaseReference userRef = FirebaseDatabase.getInstance().getReference(Firebase.USER_REF);
-        final String uId = repository.getUsers().getUid();
+        final FirebaseUser currentUser = repository.getUsers();
 
-        userRef.child(uId).setValue(user);
+        if (currentUser == null){
+            resultData.setValue(Firebase.ERROR_SIGN_IN_EXIST_USER);
+        } else {
+            userRef.child(currentUser.getUid()).setValue(user);
+        }
+
+
     }
 
 }

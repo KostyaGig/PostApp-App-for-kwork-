@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimary">#595959</color>
+    <color name="colorPrimaryDark">#595959</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="mainBackgroundColor">#F5F5F4</color>
     <color name="authButtonBackgroundColor">#478DF1</color>
@@ -9,4 +9,6 @@
     <color name="mainAddButtonColor">#4783D8</color>
     <color name="defaultLineEditText">#595959</color>
     <color name="pressedLineEditText">#4B82D1</color>
+    <color name="plus_btn_color">#3DDC84</color>
+    <color name="exist_tv_color">#9A0C0C</color>
 </resources>

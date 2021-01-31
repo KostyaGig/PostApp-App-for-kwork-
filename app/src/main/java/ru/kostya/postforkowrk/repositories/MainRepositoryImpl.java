@@ -19,9 +19,13 @@ public class MainRepositoryImpl implements MainI {
 
     @Override
     public DatabaseReference getCurrentUserReference() {
-        DatabaseReference currentUserReference = FirebaseDatabase.getInstance().getReference(Firebase.USER_REF);
 
-        return currentUserReference;
+        return FirebaseDatabase.getInstance().getReference(Firebase.USER_REF);
     }
 
+    @Override
+    public DatabaseReference getPostsReference() {
+
+        return FirebaseDatabase.getInstance().getReference(Firebase.POST_REF);
+    }
 }

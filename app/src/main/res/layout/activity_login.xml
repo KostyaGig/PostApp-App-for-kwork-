@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="22sp"
-        android:textColor="@android:color/black"
+        android:textColor="@color/defaultLineEditText"
         android:layout_marginTop="70dp"
         android:text="Вход"/>
 
@@ -26,29 +26,48 @@
         app:layout_constraintTop_toBottomOf="@id/login_tv"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="30dp">
 
 
 
-        <EditText
-            android:id="@+id/field_email"
+        <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_image="@drawable/ic_baseline_email_24"
+            app:mtf_animationDuration="800"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:hint="Ваша почта"
-            android:textColorHint="@android:color/black"
-            android:layout_marginTop="20dp"/>
+            app:mtf_labelColor="@color/defaultLineEditText"
+            >
 
-        <EditText
-            android:id="@+id/field_password"
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ваша почта"
+                android:textColorHint="@android:color/black" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            app:mtf_cardCollapsedHeight="4dp"
+            app:mtf_image="@drawable/ic_baseline_lock_24"
+            app:mtf_animationDuration="800"
             android:layout_gravity="center"
-            android:inputType="textPassword"
-            android:hint="Пароль не менее 6 символов"
-            android:textColorHint="@android:color/black"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="10dp"
+            app:mtf_labelColor="@color/defaultLineEditText"
+            >
+            <EditText
+                android:id="@+id/field_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Пароль не менее 6 символов"
+                android:textColorHint="@android:color/black" />
+        </com.github.florent37.materialtextfield.MaterialTextField>
 
         <Button
             android:id="@+id/sign_in_btn"
@@ -59,6 +78,8 @@
             android:textAllCaps="true"
             android:textSize="17sp"
             android:textColorHint="@android:color/black"
+            android:background="@drawable/ripple_effect_btn"
+            android:textColor="@android:color/white"
             android:layout_marginTop="30dp" />
 
         <TextView

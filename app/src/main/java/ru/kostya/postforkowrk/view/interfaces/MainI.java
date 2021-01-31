@@ -8,4 +8,6 @@ public interface MainI {
     FirebaseUser getCurrentUser();
 
     DatabaseReference getCurrentUserReference();
+
+    DatabaseReference getPostsReference();
 }

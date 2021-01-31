@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".view.comments.CommentActivity"></activity>
         <activity android:name=".view.auth.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.auth.LoginActivity">
-
-        </activity>
-
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".view.auth.LoginActivity"></activity>
+        <activity android:name=".view.profile.ProfileActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".view.main.MainActivity" />
     </application>
 
 </manifest>
